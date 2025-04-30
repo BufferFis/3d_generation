@@ -1,0 +1,10 @@
+torch
+torchvision
+diffusers
+rembg
+trimesh
+pillow
+imageio
+accelerate
+transformers
+onnxruntime
