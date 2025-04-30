@@ -1,7 +1,8 @@
 ## Text and Image to 3d generation 
 
 ### Before running the script
-- Either run on a system with a GPU and preferably a Debian based system or run in google collab
+- Either run on a system with a GPU and preferably a Debian based system or run in google collab.
+- NOTE: GPU IS MANDATORY FOR EXECUTION
 - Google collab pre run commands `!apt-get update && apt-get install -y xvfb libgl1-mesa-glx libosmesa6 libglfw3 cmake git`
 
 - Followed by`!pip install -r requirements.txt`
