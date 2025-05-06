@@ -4,6 +4,7 @@
 
 ### Directory structure
 
+```
 project/
 │
 ├── main.py                         # Entry point: handles both image and text input processing
@@ -35,7 +36,7 @@ project/
 │       │   ├── render_2.png
 │       │   └── ...
 │       └── ...
-
+```
 
 ### Before running the script
 - Either run on a system with a GPU and preferably a Debian based system or run in google collab.
