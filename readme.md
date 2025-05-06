@@ -1,5 +1,42 @@
 ## Text and Image to 3d generation 
 
+- Text to 3d is working better than image to 3d.
+
+### Directory structure
+
+3d_generator_project/
+│
+├── main.py                         # Entry point: handles both image and text input processing
+├── README.md
+|── requirements.txt                # Requirements required to run the code
+│
+├── inputs/                         # Store input files
+│   ├── images/                     # Images for image-to-3D generation
+│   │   ├── image1.jpg
+│   │   └── ...
+│   └── texts/                      # Text prompts for text-to-3D generation which is directly the name of the .txt file
+│       ├── prompt1.txt             
+│       └── ...
+│
+├── outputs/                        # All generated outputs
+│   ├── image_to_3d/                # Outputs from image inputs
+│   │   ├── image1/                 # One folder per input image
+│   │   │   ├── mesh.obj
+│   │   │   ├── mesh.mtl
+│   │   │   └── render.png          # Image of the 3d model (Multiple)
+│   │   └── ...
+│   └── text_to_3d/                 # Outputs from text prompts
+│       ├── prompt1/                # Folder named after text prompt
+│       │   ├── mesh.obj
+│       │   ├── mesh.mtl
+│       │   └── render.png          Image of the 3d model (Multiple)
+│       └── ...
+│
+
+
+
+
+
 ### Before running the script
 - Either run on a system with a GPU and preferably a Debian based system or run in google collab.
 - NOTE: GPU IS MANDATORY FOR EXECUTION
