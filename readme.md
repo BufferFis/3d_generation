@@ -4,37 +4,37 @@
 
 ### Directory structure
 
-3d_generator_project/
+project/
 │
 ├── main.py                         # Entry point: handles both image and text input processing
-├── README.md
-|── requirements.txt                # Requirements required to run the code
+├── README.md                       # Project description and instructions
+├── requirements.txt                # Requirements needed to run the code
 │
 ├── inputs/                         # Store input files
 │   ├── images/                     # Images for image-to-3D generation
 │   │   ├── image1.jpg
 │   │   └── ...
-│   └── texts/                      # Text prompts for text-to-3D generation which is directly the name of the .txt file
-│       ├── prompt1.txt             
+│   └── texts/                      # Text prompts for text-to-3D generation
+│       ├── prompt1.txt             # Prompt text (filename is used as folder name for output)
 │       └── ...
 │
 ├── outputs/                        # All generated outputs
 │   ├── image_to_3d/                # Outputs from image inputs
-│   │   ├── image1/                 # One folder per input image
-│   │   │   ├── mesh.obj
-│   │   │   ├── mesh.mtl
-│   │   │   └── render.png          # Image of the 3d model (Multiple)
+│   │   ├── image1/                 # One folder per input image (named after the image file without extension)
+│   │   │   ├── mesh.obj            # 3D model object
+│   │   │   ├── mesh.mtl            # Material file
+│   │   │   ├── render_1.png        # Rendered view of 3D model
+│   │   │   ├── render_2.png        # Additional renders if needed
+│   │   │   └── ...
 │   │   └── ...
 │   └── text_to_3d/                 # Outputs from text prompts
-│       ├── prompt1/                # Folder named after text prompt
+│       ├── prompt1/                # Folder named after text file (without extension)
 │       │   ├── mesh.obj
 │       │   ├── mesh.mtl
-│       │   └── render.png          Image of the 3d model (Multiple)
+│       │   ├── render_1.png
+│       │   ├── render_2.png
+│       │   └── ...
 │       └── ...
-│
-
-
-
 
 
 ### Before running the script
